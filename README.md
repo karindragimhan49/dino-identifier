@@ -3,7 +3,7 @@
 A machine learning web app to predict passenger survival on the Titanic using logistic regression. Built using `scikit-learn`, `pandas`, and `Streamlit`.
 
 ---
-
+Live Demo - > https://dino-identifier.streamlit.app/
 ## 🚀 Features
 
 - Predict survival based on passenger data
