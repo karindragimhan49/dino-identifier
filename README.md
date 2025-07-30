@@ -1,45 +1,66 @@
-# 🧠 Titanic Survival Predictor
+# 🦖 Dino-Identifier: A Paleontological Classifier
 
-A machine learning web app to predict passenger survival on the Titanic using logistic regression. Built using `scikit-learn`, `pandas`, and `Streamlit`.
+[![Python](https://img.shields.io/badge/Python-3.9%2B-blue?style=for-the-badge&logo=python)](https://www.python.org/)
+[![Scikit-learn](https://img.shields.io/badge/Scikit--learn-1.x-orange?style=for-the-badge&logo=scikit-learn)](https://scikit-learn.org/)
+[![Streamlit](https://img.shields.io/badge/Streamlit-1.x-red?style=for-the-badge&logo=streamlit)](https://streamlit.io/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
+
+An immersive web application that uses machine learning to classify dinosaurs as either **Carnivores** or **Herbivores** based on their fossil measurements. This project showcases an end-to-end ML workflow, from data exploration to a fully interactive and thematically designed deployment.
+
+ Live Demo -> https://dino-identifier.streamlit.app/
 
 ---
-Live Demo - > https://dino-identifier.streamlit.app/
-## 🚀 Features
 
-- Predict survival based on passenger data
-- Data preprocessing included
-- Model evaluation with accuracy, confusion matrix, and classification report
-- Streamlit-based user interface
+## ✨ Core Features
+
+- **Immersive & Thematic UI:** A custom-styled interface with a background image that transports the user to a paleontological setting, providing a unique and engaging experience.
+- **Real-time Classification:** Leverages a trained `RandomForestClassifier` to provide instant predictions on dinosaur diet.
+- **Interactive Fossil Analysis Panel:** A clean sidebar allows users to input fossil data (length, geological age) using intuitive sliders.
+- **Detailed & Visual Results:** The application presents the prediction, confidence level, and input summary in a clear, professional dashboard format, complete with high-quality imagery.
+- **Reproducible Workflow:** The entire process—from data cleaning and exploratory analysis in a Jupyter Notebook to model training in a Python script—is documented and easy to reproduce.
+
+
+---
+
+## ✨ Features
+
+- Train a classifier using sample data
+- Interactive web UI for predictions
+- Easy local deployment with Streamlit
+
+---
+
+## 🛠️ Tech Stack
+
+- **Python 3.9+**
+- **Pandas, NumPy**
+- **Scikit-learn**
+- **Streamlit**
 
 ---
 
 ## 📁 Project Structure
 
 ```
-titanic-survival-predictor/
-├── app.py                   # Streamlit app
-├── model/
-│   └── model.joblib         # Trained ML model
-├── data/
-│   └── cleaned_titanic.csv  # Processed dataset
-├── notebooks/
-│   └── titanic_exploration.ipynb  # Jupyter notebook (EDA + training)
-├── requirements.txt
-└── README.md
+ml-streamlit-app/
+├── app.py                  # Streamlit app script
+├── model.pkl               # Trained model file (optional)
+├── requirements.txt        # Project dependencies
+└── README.md               # Project documentation (you are here!)
 ```
 
 ---
 
-## ⚙️ Setup Instructions
+## 🚀 Getting Started
 
-### 1. Clone the Repository
+### 1. Clone the repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/titanic-survival-predictor.git
-cd titanic-survival-predictor
+git clone https://github.com/your-username/ml-streamlit-app.git
+cd ml-streamlit-app
 ```
 
-### 2. Create a Virtual Environment
+### 2. Create and activate virtual environment
 
 ```bash
 # Windows
@@ -51,59 +72,22 @@ python3 -m venv venv
 source venv/bin/activate
 ```
 
-### 3. Install Requirements
+### 3. Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
----
-
-## 🧠 Train the Model
-
-If needed, retrain the model:
-
-```bash
-# Inside a script or notebook
-python -m notebooks.titanic_exploration.ipynb
-```
-
-Or extract the training logic to a `train.py` file and run:
-
-```bash
-python train.py
-```
-
----
-
-## 🌐 Run the Streamlit App
+### 4. Run the app
 
 ```bash
 streamlit run app.py
 ```
 
-Go to `http://localhost:8501` in your browser.
+Then open the app in your browser.
 
 ---
 
-## 🧪 Dependencies
+## 📜 License
 
-- pandas
-- numpy
-- scikit-learn
-- matplotlib
-- seaborn
-- streamlit
-- joblib
-
-Install with:
-
-```bash
-pip install -r requirements.txt
-```
-
----
-
-## 📄 License
-
-MIT License
+This project is licensed under the MIT License.
